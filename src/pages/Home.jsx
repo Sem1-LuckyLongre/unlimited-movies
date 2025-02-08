@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 
 export const Home = () => {
+  if(localStorage.getItem("goTomovie")){
+    window.location.assign("/movies")
+  }
   return (
     <div className="home">
       <section className="hero">
