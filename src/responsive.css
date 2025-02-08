@@ -1,0 +1,96 @@
+/* kiska.css */
+
+/* Navbar and Burger Icon Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+  
+  .cart-icon a {
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  /* Burger Menu Icon */
+  .burger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .burger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  /* Burger Icon Open State (Transforms into X) */
+  .burger-icon.open .burger-bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .burger-icon.open .burger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-icon.open .burger-bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    .burger-icon {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+  

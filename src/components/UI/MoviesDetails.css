@@ -1,0 +1,82 @@
+.movie-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.poster-container img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.poster-container img:hover {
+  transform: scale(1.05);
+}
+
+.details-container {
+  max-width: 500px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f8b400;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background: #ff4081;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.year {
+  background: #8e44ad;
+}
+
+.plot {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.awards {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.extra-details p {
+  margin: 5px 0;
+}
+
+.back-button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background: #e73370;
+}
