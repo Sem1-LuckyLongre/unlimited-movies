@@ -8,7 +8,7 @@ export const Movies = () => {
     let searchValue = document.getElementById("searchV").value;
     localStorage.setItem("Search_Value", searchValue);
 
-    window.location.reload();
+    // window.location.reload();
   };
 
   return (
