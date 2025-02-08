@@ -7,8 +7,8 @@ export const Movies = () => {
     let searchValue = document.getElementById("searchV").value;
     if (searchValue.length > 0) {
       localStorage.setItem("Search_Value", searchValue);
+      alert("Now Click On Explore");
       window.location.assign("/");
-      localStorage.setItem("goTomovie",true);
     }
   };
 
