@@ -5,7 +5,7 @@ export const Movies = () => {
   const moviesData = useLoaderData();
   const navigate = useNavigate();
   const HandleSubmit = () => {
-    let searchValue = document.getElementById("searchV").value;
+    let searchVlue = document.getElementById("searchV").value;
     localStorage.setItem("Search_Value", searchValue);
 
     // window.location.reload();
