@@ -5,9 +5,10 @@ export const Movies = () => {
   const moviesData = useLoaderData();
   const HandleSubmit = () => {
     let searchValue = document.getElementById("searchV").value;
-    localStorage.setItem("Search_Value", searchValue);
-
-    window.location.reload();
+    if (searchValue.length > 0) {
+      localStorage.setItem("Search_Value", searchValue);
+      window.location.assign("/");
+    }
   };
 
   return (
