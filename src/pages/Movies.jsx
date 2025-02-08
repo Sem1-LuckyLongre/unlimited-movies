@@ -1,14 +1,15 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { Card } from "../components/UI/Card";
-import { useEffect, useState } from "react";
 
 export const Movies = () => {
   const moviesData = useLoaderData();
+  const navigate = useNavigate();
   const HandleSubmit = () => {
     let searchValue = document.getElementById("searchV").value;
     localStorage.setItem("Search_Value", searchValue);
 
     // window.location.reload();
+    navigate("/");
   };
 
   return (
