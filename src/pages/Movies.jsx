@@ -3,13 +3,11 @@ import { Card } from "../components/UI/Card";
 
 export const Movies = () => {
   const moviesData = useLoaderData();
-  const navigate = useNavigate();
   const HandleSubmit = () => {
-    let searchVlue = document.getElementById("searchV").value;
+    let searchValue = document.getElementById("searchV").value;
     localStorage.setItem("Search_Value", searchValue);
 
-    // window.location.reload();
-    navigate("/");
+    window.location.reload();
   };
 
   return (
